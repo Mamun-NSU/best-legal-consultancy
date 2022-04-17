@@ -35,7 +35,7 @@ const Header = () => {
               <Nav.Link as={Link} to="about">
                 About
               </Nav.Link>
-              <Nav.Link as={Link} to="LogIn">
+              <Nav.Link as={Link} to="logIn">
                 LogIn
               </Nav.Link>
             </Nav>

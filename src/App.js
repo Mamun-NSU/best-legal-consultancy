@@ -1,13 +1,16 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/Header/Header";
 import { Route, Routes } from "react-router-dom";
+
+import Header from "./components/Shared/Header/Header";
+import Footer from "./components/Shared/Footer/Footer";
 
 import Home from "./components/Home/Home";
 import Checkout from "./components/Checkout/Checkout";
 import Blogs from "./components/Blogs/Blogs";
 import About from "./components/About/About";
-import NotFound from "./components/NotFound/NotFound";
+import Login from "./components/Login/Login/Login";
+import NotFound from "./components/Shared/NotFound/NotFound";
 
 function App() {
   return (
@@ -20,8 +23,12 @@ function App() {
         <Route path="/checkout" element={<Checkout></Checkout>} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/about" element={<About></About>} />
+        <Route path="/login" element={<Login></Login>} />
         <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
+      <Footer>
+
+      </Footer>
     </div>
   );
 }
