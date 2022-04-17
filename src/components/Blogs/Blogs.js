@@ -3,8 +3,31 @@ import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div>
-      <h2>This is Blogs page</h2>
+    <div class="blog-container">
+      <hr />
+      <div class="single-blog">
+        <h5>Difference between Authorization and Authentication?</h5>
+        <p>
+          <span class="answare-keyword">Answare:</span> ...
+        </p>
+      </div>
+      <div class="single-blog">
+        <h5>
+          Why are you using Firebase? What other options do you have to
+          implement Authentication?
+        </h5>
+        <p>
+          <span class="answare-keyword">Answare:</span> ...
+        </p>
+      </div>
+      <div class="single-blog">
+        <h5>
+          What other services does Firebase provide other than Authentication?
+        </h5>
+        <p>
+          <span class="answare-keyword">Answare:</span> ...
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.blog-container {
+   
+}
+
+.single-blog {
+    
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.answare-keyword {
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 5px;
+}
