@@ -26,9 +26,7 @@ function App() {
         <Route path="/login" element={<Login></Login>} />
         <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
-      <Footer>
-
-      </Footer>
+      <Footer></Footer>
     </div>
   );
 }
