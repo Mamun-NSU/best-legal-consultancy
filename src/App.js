@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Shared/Header/Header";
@@ -13,15 +13,23 @@ import Login from "./components/Login/Login/Login";
 import Register from "./components/Login/Register/Register";
 import RequireAuth from "./components/Login/RequireAuth/RequireAuth";
 import NotFound from "./components/Shared/NotFound/NotFound";
+import Service from "./components/Service/Service";
+import useServices from "./hooks/useServices";
+import { Link, useParams } from "react-router-dom";
 
 function App() {
+  const [services, setServices] = useServices();
+
   return (
     <div>
       <Header></Header>
-
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path="/home" element={<Home></Home>} />
+        <Route
+          path="/checkout/:serviceId"
+          element={<Checkout></Checkout>}
+        ></Route>
         {/* <Route path="/checkout" element={<Checkout></Checkout>} /> */}
         <Route
           path="/checkout"

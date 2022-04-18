@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
-  const { service_name, image, price, description } = props.service;
+  const { id, service_name, image, price, description } = props.service;
+  //   const { serviceId } = useParams();
   return (
     <div className="service">
       <img src={image} alt="user image"></img>
@@ -21,7 +22,8 @@ const Service = (props) => {
         {description.slice(0, 250)}
       </p>
       <div className="text-center">
-        <Link to="/checkout">
+        <Link to={`/checkout/${id}`}>
+          {/* <Link to="/checkout/2"> */}
           <button className="btn btn-primary">Proceed Checkout</button>
         </Link>
       </div>
