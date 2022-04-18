@@ -1,0 +1,15 @@
+
+.service {
+    height: 400px;
+    width: 300px;
+}
+
+.service img {
+    height: 50px;
+    width: 50px;
+
+}
+.font-bold{
+    font-weight: bold;
+  
+}
