@@ -9,6 +9,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -152,7 +153,7 @@ const Login = () => {
         {createUser && <p className="text-success">User Create Successfully</p>}
         {user && <p className="text-success">User Login Successfully</p>}
       </form>
-      <p>
+      <p className="text-center">
         Forget Password?{" "}
         <button
           className="btn btn-link text-primary pe-auto text-decoration-none"
@@ -161,6 +162,7 @@ const Login = () => {
           Reset Password
         </button>{" "}
       </p>
+      <SocialLogin></SocialLogin>
       <ToastContainer></ToastContainer>
     </div>
   );
