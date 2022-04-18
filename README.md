@@ -1,10 +1,10 @@
-### `Name: Ball Shop`
+### `Name: Best Legal Consultancy`
 
 Project Name: Best Legal Consultancy
 
 ### `Live Site Link:`
 
-Live server on Netlify Link:
+Live server on Google Firebase:
 []()
 
 ### `Github Link:`

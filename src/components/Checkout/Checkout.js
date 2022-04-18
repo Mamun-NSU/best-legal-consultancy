@@ -1,20 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
-// import { useParams } from "react-router-dom";
-// import useServices from "../../hooks/useServices";
-// import Service from "../Service/Service";
 import "./Checkout.css";
-
-// const [services, setServices] = useServices();
-// const { serviceId } = useParams();
-// const [serviceObj, setServiceObj] = useState({});
-
-// useEffect(() => {
-//   if (services.length) {
-//     const serviceObj = services.find((service) => service.id == serviceId);
-//     setServiceObj(serviceObj);
-//   }
-// }, [services]);
 
 const Checkout = () => {
   const handleSubmit = (event) => {
@@ -22,7 +8,6 @@ const Checkout = () => {
   };
   return (
     <div>
-      {/* {serviceObj && <Service service={serviceObj}></Service>} */}
       <h2 className="text-center">Hello, Welcome to the checkout page</h2>
 
       <Form className="w-50 mx-auto" onSubmit={handleSubmit}>

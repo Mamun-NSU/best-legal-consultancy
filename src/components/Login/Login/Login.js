@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   useCreateUserWithEmailAndPassword,
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
-
-/*
-<p data={data}==props.data> {email, phone}==children.email/pass   </P>
-
-*/
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
+  const emailRef = useRef("");
+  const passwordRef = useRef("");
+
   const [login, setLogin] = useState(true);
 
   const [confirmError, setConfirmError] = useState("");
@@ -31,6 +32,7 @@ const Login = () => {
     createError,
   ] = useCreateUserWithEmailAndPassword(auth);
 
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
   //for login
   const [
     signInWithEmailAndPassword,
@@ -72,6 +74,16 @@ const Login = () => {
     // navigate(from, { replace: true });
     navigate("/home");
   }
+
+  const resetPassword = async () => {
+    const email = emailRef.current.value;
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Sent email");
+    } else {
+      toast("please enter your email address");
+    }
+  };
 
   return (
     <div className="container">
@@ -140,6 +152,16 @@ const Login = () => {
         {createUser && <p className="text-success">User Create Successfully</p>}
         {user && <p className="text-success">User Login Successfully</p>}
       </form>
+      <p>
+        Forget Password?{" "}
+        <button
+          className="btn btn-link text-primary pe-auto text-decoration-none"
+          onClick={resetPassword}
+        >
+          Reset Password
+        </button>{" "}
+      </p>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
