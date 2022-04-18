@@ -2,12 +2,15 @@ import React from "react";
 import "./Home.css";
 import Banner from "../Banner/Banner";
 import Services from "../Services/Services";
+import Slider from "../Slider/Slider";
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-75 mx-auto">
+      <h1>Best Legal Consultancy</h1>
       <Banner></Banner>
       <Services></Services>
+      <Slider></Slider>
     </div>
   );
 };
