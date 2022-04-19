@@ -7,6 +7,8 @@
     height: 200px;
     width: 200px;
     margin: 0 auto;
+    border: 1px solid lightblue;
+    border-radius: 25px;
 }
 
 .bold-txt {

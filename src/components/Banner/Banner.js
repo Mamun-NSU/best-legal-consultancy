@@ -9,7 +9,7 @@ const Banner = () => {
         <h2 className="text-success">Famous Lawyer in the town!!</h2>
         <h4 className="">If you need any legal consultancy...</h4>
         <button className="btn btn-success">
-          <a src="/">Reach Me</a>
+          <a src="/">Contact Me</a>
         </button>
       </div>
       <div className="image-container">

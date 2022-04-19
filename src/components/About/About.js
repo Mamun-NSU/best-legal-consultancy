@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div className=" text-container">
       <h2 className="text-center text-primary">My Personal Information</h2>
-      <div className="text-start m-5">
-        <img className="myImg" src={myImg} alt=""></img>
+      <div className="text-center m-5">
+        <img className="myImg mb-3" src={myImg} alt=""></img>
 
         <h3>
           <span className="bold-txt">Name:</span>Abdullah Al Mamun
