@@ -19,13 +19,28 @@
         height: 500px;
         grid-template-columns: 1fr;
     }
+    .text-container{
+        order: 2;
+    }
+    .image-container{
+        order: 1;
+        display: block;
+        margin: 0 100px;
+    }
   }
   
   /*  For Tablet devices */
   @media only screen and (min-width: 669px) and (max-width: 992px) {
-    .hero-container{
-       
+    .hero-container{ 
         height: 500px;
         grid-template-columns: 1fr;
+    }
+    .text-container{
+        order: 2;
+    }
+    .image-container{
+        order: 1;
+        display: block;
+        margin: 0 230px;
     }
   }

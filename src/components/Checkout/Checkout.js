@@ -34,10 +34,10 @@ const Checkout = () => {
 
         <Button
           className="w-25 px-5 d-flex mx-auto myBtn"
-          variant="primary"
+          variant="success"
           type="submit"
         >
-          Submit Details
+          Information Submit
         </Button>
       </Form>
     </div>
