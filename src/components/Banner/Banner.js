@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="text-container">
         <h1>Famous Lawyer in the town!!</h1>
         <h3>If you need any legal consultancy...</h3>
-        <button>
+        <button className="btn btn-primary">
           <a src="/">Click here...</a>
         </button>
       </div>

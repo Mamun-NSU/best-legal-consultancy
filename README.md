@@ -11,3 +11,25 @@ Live server on Google Firebase:
 
 Private Git Repo Link:
 [https://github.com/programming-hero-web-course-4/independent-service-provider-Mamun-NSU](https://github.com/programming-hero-web-course-4/independent-service-provider-Mamun-NSU)
+
+### `Project details:`
+
+- Best Legal Consultancy
+
+  - Features
+
+    - Private route: Without login, the user can go the private route.
+    - Dynamic Header: The header will be change after the user Login or SignOut.
+    - Social LogIn: Can LogIn with social media like GitHub, Gmail.
+    - Display Error: Show error message in LogIn form
+    - Reset Password: We can reset password
+
+  - Function:
+
+    - We can LogIn this site via GitHub and Gmail account
+    - We cal register using Email and password
+
+  - Techknowlogies:
+    - Google Firebase
+    - NodeJs
+    - GitHub

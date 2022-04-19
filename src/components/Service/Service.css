@@ -1,20 +1,21 @@
 .service {
-    height: 400px;
+    height: 500px;
     width: 300px;
     padding: 10px;
     border: 1px solid lightgrey;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .service img {
     display: block;
     margin: 0 auto;
-    height: 50px;
-    width: 200px;
+    height: 150px;
+    width: 250px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
 
 }
 
 .font-bold {
     font-weight: bold;
-
 }

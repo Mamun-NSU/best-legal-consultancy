@@ -18,7 +18,7 @@ const Header = () => {
         collapseOnSelect
         expand="lg"
         sticky="top"
-        bg="dark"
+        bg="primary"
         variant="dark"
       >
         <Container>
@@ -29,11 +29,11 @@ const Header = () => {
               <Nav.Link as={Link} to="home">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="checkout">
-                Checkout
-              </Nav.Link>
               <Nav.Link as={Link} to="blogs">
                 Blogs
+              </Nav.Link>
+              <Nav.Link as={Link} to="checkout">
+                Checkout
               </Nav.Link>
               <Nav.Link as={Link} to="about">
                 About
