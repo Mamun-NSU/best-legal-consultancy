@@ -6,7 +6,6 @@ const About = () => {
     <div className=" text-container">
       <h2 className="text-center text-primary">My Personal Information</h2>
       <div className="text-start m-5">
-        <h1>This is test</h1>
         <h3>
           <span className="bold-txt">Name:</span>Abdullah Al Mamun
         </h3>
