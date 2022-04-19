@@ -2,6 +2,13 @@
     padding: 20px;
 } */
 
+.myImg {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
 .bold-txt {
     font-weight: bold;
     margin-right: 5px;
