@@ -3,7 +3,7 @@ import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div class="blog-container">
+    <div class="blog-container w-80">
       <hr />
       <div class="single-blog">
         <h5>Difference between Authorization and Authentication?</h5>

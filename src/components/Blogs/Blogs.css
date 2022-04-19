@@ -1,9 +1,10 @@
 .blog-container {
-   
+    width: 80%;
+    margin: 0 auto;
 }
 
 .single-blog {
-    
+
     padding: 20px 30px;
     justify-content: center;
     align-items: center;

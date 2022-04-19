@@ -7,7 +7,7 @@ import Slider from "../Slider/Slider";
 const Home = () => {
   return (
     <div className="w-75 mx-auto">
-      <h1>Best Legal Consultancy</h1>
+      <h1 className="text-center">Best Legal Consultancy</h1>
       <Banner></Banner>
       <Services></Services>
       <Slider></Slider>
