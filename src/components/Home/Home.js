@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <div className="w-75 mx-auto">
       <h1 className="text-center text-primary">Best Legal Consultancy</h1>
+      {/* Homepage elements */}
       <MainBanner></MainBanner>
       <Banner></Banner>
       <Services></Services>
